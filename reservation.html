@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - CarBNB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">CarBNB</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#voitures">Nos Voitures</a></li>
+                <li><a href="index.html">Réservations</a></li>
+                <li><a href="#">Mon Compte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Se Connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reservation Form -->
+    <section class="reservation-section">
+        <h2>Réservez votre voiture</h2>
+        
+        <form id="reservation-form" class="reservation-form">
+            <!-- Car Selection -->
+            <div class="form-group">
+                <label for="car-selection">Choisissez une voiture:</label>
+                <select id="car-selection" name="car" required>
+                    <option value="Peugeot 308">Peugeot 308</option>
+                    <option value="Renault Clio">Renault Clio</option>
+                    <option value="Volkswagen T-Roc">Volkswagen T-Roc</option>
+                    <option value="BMW Serie 4">BMW Serie 4</option>
+                    <option value="Audi A6">Audi A6</option>
+                </select>
+            </div>
+
+            <!-- Date Selection -->
+            <div class="form-group">
+                <label for="start-date">Date de début:</label>
+                <input type="date" id="start-date" name="start-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="end-date">Date de fin:</label>
+                <input type="date" id="end-date" name="end-date" required>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="full-name">Nom Complet:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Numéro de téléphone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Additional Options -->
+            <div class="form-group">
+                <label for="extras">Options supplémentaires:</label>
+                <div>
+                    <input type="checkbox" id="gps" name="extras" value="GPS">
+                    <label for="gps">GPS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="child-seat" name="extras" value="Child Seat">
+                    <label for="child-seat">Siège enfant</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="insurance" name="extras" value="Insurance">
+                    <label for="insurance">Assurance supplémentaire</label>
+                </div>
+            </div>
+
+            <!-- Reservation Summary -->
+            <div class="reservation-summary">
+                <h3>Résumé de la réservation</h3>
+                <p><strong>Voiture sélectionnée:</strong> <span id="selected-car"></span></p>
+                <p><strong>Date de début:</strong> <span id="selected-start-date"></span></p>
+                <p><strong>Date de fin:</strong> <span id="selected-end-date"></span></p>
+                <p><strong>Nom:</strong> <span id="selected-name"></span></p>
+                <p><strong>E-mail:</strong> <span id="selected-email"></span></p>
+                <p><strong>Téléphone:</strong> <span id="selected-phone"></span></p>
+                <p><strong>Options:</strong> <span id="selected-options"></span></p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="cta-btn">Confirmer la réservation</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CarBNB. Tous droits réservés.</p>
+    </footer>
+
+    <script src="reservation.js"></script>
+</body>
+</html>

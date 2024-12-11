@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarBNB - Louez des voitures facilement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">CarBNB</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#voitures">Nos Voitures</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="#">Mon Compte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Se Connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Louez une voiture facilement avec CarBNB!</h1>
+            <p>Des véhicules de qualité, un service sans tracas.</p>
+            <a href="#voitures" class="cta-btn">Réservez une voiture maintenant!</a>
+        </div>
+    </section>
+
+    <!-- Car Filters Section -->
+    <section id="filters" class="filters">
+        <h2>Filtrer les voitures</h2>
+        <div class="filter-container">
+            <input type="text" id="search" placeholder="Recherche..." class="filter-input">
+            <select id="brand-filter" class="filter-select">
+                <option value="">Sélectionner la marque</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Renault">Renault</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Vokswagen">Volkswagen</option>
+            </select>
+            <select id="price-filter" class="filter-select">
+                <option value="">Prix</option>
+                <option value="low">Moins de 500 MAD</option>
+                <option value="high">Plus de 500 MAD</option>
+            </select>
+            <button id="apply-filters" class="filter-btn">Appliquer</button>
+        </div>
+    </section>
+
+    <!-- Car Listings Section -->
+    <h2 class="Nos-Voiture">Nos Voitures</h2>
+
+    <section id="voitures" class="car-listings">
+        
+        <div class="car-item" data-brand="Peugeot" data-price="400">
+            <img src="images/Peugeot_308.jpg" alt="Peugeot 308" class="car-image">
+            <h3>Peugeot 308</h3>
+            <p class="car-description">Véhicule confortable et économique.</p>
+            <p class="car-price">Prix: 400 MAD/jour</p>
+            <button class="cta-btn">Réservez maintenant!</button>
+        </div>
+        <div class="car-item" data-brand="Renault" data-price="300">
+            <img src="images/Renault_Clio.jpg" alt="Renault Clio" class="car-image">
+            <h3>Renault Clio</h3>
+            <p class="car-description">Compacte, parfaite pour la ville.</p>
+            <p class="car-price">Prix: 300 MAD/jour</p>
+            <button class="cta-btn">Réservez maintenant!</button>
+        </div>
+        <div class="car-item" data-brand="Vokswagen" data-price="650">
+            <img src="images/Volkswagen_T-Roc.jpg" alt="Volkswagen T-Roc" class="car-image">
+            <h3>Volkswagen T-Roc</h3>
+            <p class="car-description">SUV compact et élégant, parfait pour les aventures urbaines et les escapades sur route.</p>
+            <p class="car-price">Prix: 650 MAD/jour</p>
+            <button class="cta-btn">Réservez maintenant!</button>
+        </div>
+        <div class="car-item" data-brand="BMW" data-price="1200">
+            <img src="images/Bmw_serie-4.jpg" alt="BMW Serie 4" class="car-image">
+            <h3>BMW Serie 4</h3>
+            <p class="car-description">Coupé sport élégant offrant une conduite dynamique et un design raffiné pour les amateurs de performance.</p>
+            <p class="car-price">Prix: 1200 MAD/jour</p>
+            <button class="cta-btn">Réservez maintenant!</button>
+        </div>
+        <div class="car-item" data-brand="Audi" data-price="900">
+            <img src="images/Audi_a6.jpg" alt="Audi a6" class="car-image">
+            <h3>Audi a6</h3>
+            <p class="car-description">Berline élégante et sophistiquée, alliant confort haut de gamme, technologie avancée et performances exceptionnelles pour des trajets mémorables.</p>
+            <p class="car-price">Prix: 900 MAD/jour</p>
+            <button class="cta-btn">Réservez maintenant!</button>
+        </div>
+        <div class="car-item" data-brand="Audi" data-price="900">
+            <img src="images/Audi_a6.jpg" alt="Audi a6" class="car-image">
+            <h3>Audi a6</h3>
+            <p class="car-description">Berline élégante et sophistiquée, alliant confort haut de gamme, technologie avancée et performances exceptionnelles pour des trajets mémorables.</p>
+            <p class="car-price">Prix: 900 MAD/jour</p>
+            <button class="cta-btn">Réservez maintenant!</button>
+        </div>
+        <div class="container">
+            <div class="content">
+              <!-- Your content goes here -->
+            </div>
+            <button class="submit-btn">Submit</button>
+          </div>
+          
+        <!-- Add more cars here -->
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 CarBNB. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
