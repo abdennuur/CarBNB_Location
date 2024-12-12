@@ -5,6 +5,7 @@ const priceFilter = document.getElementById('price-filter');
 const applyFiltersBtn = document.getElementById('apply-filters');
 const carItems = document.querySelectorAll('.car-item');
 
+
 // Function to apply filters
 const applyFilters = () => {
     const searchQuery = searchInput.value.toLowerCase();
