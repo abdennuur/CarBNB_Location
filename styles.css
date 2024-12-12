@@ -14,12 +14,19 @@ body {
 
 /* Navbar */
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #331e47;
     padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is on top of other content */
+    padding: 10px 0; /* Adjust padding as needed */
 }
+
 
 .navbar .logo a {
     color: white;
@@ -91,6 +98,7 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    padding-top: 60px;
 }
 
 .filters input,
@@ -334,17 +342,7 @@ body {
         align-items: center;
     }
 }
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: rgb(255, 94, 0);
-    bottom: 0;
-    right: 0;
-    left: 0;
-    
-    
-}
+
 
 /* Reservation Page */
 .reservation-section {
@@ -506,6 +504,18 @@ button.cta-btn {
 
 button.cta-btn:hover {
     background-color: #e55b00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 13px;
+    color: rgb(255, 255, 255);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #331e47;
+    position: relative;
 }
 
 /* Responsive Design */
