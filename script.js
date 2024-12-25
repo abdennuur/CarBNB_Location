@@ -42,6 +42,40 @@ const applyFilters = () => {
     });
 };
 
+// Smooth Scroll Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    // Add smooth scrolling to navbar and buttons
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').slice(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Scroll to Top Button
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    window.addEventListener('scroll', () => {
+        scrollToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Dark Mode Toggle
+    const toggleDarkMode = document.getElementById('toggleDarkMode');
+    toggleDarkMode.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggleDarkMode.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+});
+
+
 // Apply filters when the "Apply Filters" button is clicked
 applyFiltersBtn.addEventListener('click', applyFilters);
 
@@ -51,3 +85,4 @@ searchInput.addEventListener('input', applyFilters);
 // Optional: Apply filters dynamically when the brand or price filters are changed
 brandFilter.addEventListener('change', applyFilters);
 priceFilter.addEventListener('change', applyFilters);
+

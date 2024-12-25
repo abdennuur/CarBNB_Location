@@ -28,6 +28,9 @@ body {
 }
 
 
+
+
+
 .navbar .logo a {
     color: white;
     text-decoration: none;
@@ -94,15 +97,15 @@ body {
 .filters {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 60px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .filters input,
 .filters select {
-    padding: 10px;
+    padding: 100px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -310,6 +313,38 @@ body {
 .close-btn:hover {
     background-color: #e55d00;
 }
+/* Car Filt Section */
+.filt {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+}
+
+.filt input,
+.filt select {
+    padding: 100px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filt button {
+    background-color: #ff6200;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filt button:hover {
+    background-color: #e55d00;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -445,9 +480,59 @@ button.cta-btn:hover {
 
 /* Contact Page */
 .contact-section {
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
     text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #331e47;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.company-info {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.company-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #331e47;
+}
+
+.company-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.company-info li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.company-info a {
+    color: #ff6200;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company-info a:hover {
+    color: #e55b00;
 }
 
 .contact-section h2 {
@@ -505,6 +590,8 @@ button.cta-btn:hover {
     background-color: #e55b00;
 }
 
+
+
 /* Footer */
 footer {
     text-align: center;
@@ -514,7 +601,7 @@ footer {
     right: 0;
     left: 0;
     background-color: #331e47;
-    position: relative;
+    position: fixed;
 }
 
 /* Responsive Design */
