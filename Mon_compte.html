@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - CarBNB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">CarBNB</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#voitures">Nos Voitures</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="Mon_compte.html">Mon Compte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Se_Connecter.html">Se Connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Account Section -->
+    <main class="account-section">
+        <h1>Bienvenue dans votre espace personnel</h1>
+        <p>Gérez vos informations, réservations et préférences.</p>
+
+        <section class="account-info">
+            <h2>Mes Informations</h2>
+            <form id="account-form">
+                <div class="form-group">
+                    <label for="full-name">Nom complet</label>
+                    <input type="text" id="full-name" placeholder="Votre nom complet">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" placeholder="Votre adresse email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" placeholder="Votre mot de passe">
+                </div>
+                <button type="submit" class="cta-btn">Mettre à jour</button>
+            </form>
+        </section>
+
+        <section class="reservations">
+            <h2>Mes Réservations</h2>
+            <div class="reservation-list">
+                <p>Aucune réservation pour le moment.</p>
+                <!-- Dynamically populate reservations here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CarBNB. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

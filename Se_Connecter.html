@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Connecter - CarBNB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">CarBNB</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#voitures">Nos Voitures</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="Mon_compte.html">Mon Compte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Se_Connecter.html" class="active">Se Connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <main class="login-section">
+        <h1>Connexion</h1>
+        <p>Connectez-vous pour accéder à votre compte et gérer vos réservations.</p>
+
+        <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" placeholder="Entrez votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de Passe</label>
+                <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+            </div>
+            <button type="submit" class="cta-btn">Se Connecter</button>
+        </form>
+
+        <p class="register-link">
+            Pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici</a>
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CarBNB. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
